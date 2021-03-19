@@ -10,7 +10,7 @@ function App() {
         <CoinPanel face="head"/>
       </div>
 
-      <div className="App-ControlPanel">
+      <div className="CoinFlippingSim-PlottingPanel">
         <PlottingPanel alpha="2" beta="2" />
       </div>
 
