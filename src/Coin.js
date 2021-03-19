@@ -10,7 +10,7 @@ class Coin extends Component {
         return (
 
             <div>
-                <i class={`fas fa-circle ${face}`}></i>
+                <i class={`Coin fas fa-circle ${face}`}></i>
             </div>
         );
     }
