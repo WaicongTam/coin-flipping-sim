@@ -8,11 +8,26 @@ class CoinFlippingSim extends Component {
         super(props);
 
         this.state = {
-            alpha: 2,
-            beta: 2,
-            face: 'head',
-            realProb: 0.5,
+            alpha: this.props.alpha,
+            beta: this.props.beta,
+            face: this.props.face,
+            realProb: this.props.realProb,
+            table: this.props.table,
         }
+    }
+
+    static defaultProps = {
+        alpha: 2,
+        beta: 2,
+        face: 'head',
+        realProb: 0.5,
+        table: [
+            {
+                'result': '-',
+                'history': '-',
+                'knowledge': 0.5,
+            },
+        ]
     }
 
     render() {
