@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
+import InputPanel from './InputPanel';
 
 class CoinFlippingSim extends Component {
 
@@ -36,7 +37,11 @@ class CoinFlippingSim extends Component {
                 <div className="CoinFlippingSim-CoinPanel">
                     <CoinPanel face={ this.state.face }/>
                 </div>
-    
+
+                <div>
+                    <InputPanel />
+                </div>
+
                 <div className="CoinFlippingSim-PlottingPanel">
                     <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
                 </div>
