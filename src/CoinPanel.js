@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Coin from './Coin';
+import './CoinPanel.css';
 
 class CoinPanel extends Component {
 
