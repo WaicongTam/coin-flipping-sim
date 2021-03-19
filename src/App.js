@@ -1,4 +1,5 @@
 import './App.css';
+import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       </div>
 
       <div className="App-ControlPanel">
-
+        <PlottingPanel alpha="2" beta="2" />
       </div>
 
       <div className="App-HistoryPanel">
