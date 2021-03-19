@@ -1,4 +1,5 @@
 import './App.css';
+import PlottingPanel from './PlottingPanel';
 
 function App() {
   return (
