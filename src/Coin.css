@@ -1,0 +1,11 @@
+.Coin {
+    font-size: 15em;
+}
+
+.head {
+    color: rgb(98, 0, 255);
+}
+
+.tail {
+    color: pink;
+}

@@ -1,11 +1,12 @@
 import './App.css';
+import CoinPanel from './CoinPanel';
 
 function App() {
   return (
     <div className="App">
 
       <div className="App-CoinPanel">
-
+        <CoinPanel face="head"/>
       </div>
 
       <div className="App-ControlPanel">
