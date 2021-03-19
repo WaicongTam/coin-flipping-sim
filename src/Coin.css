@@ -1,9 +1,9 @@
 .Coin {
-    font-size: 2em;
+    font-size: 15em;
 }
 
 .head {
-    color: blue;
+    color: rgb(98, 0, 255);
 }
 
 .tail {
