@@ -10,7 +10,7 @@ function App() {
       </div>
 
       <div className="App-ControlPanel">
-
+        <PlottingPanel alpha="2" beta="2" />
       </div>
 
       <div className="App-HistoryPanel">
