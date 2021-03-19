@@ -10,6 +10,9 @@ class CoinPanel extends Component {
 
         return (
             <div className="CoinPanel">
+                <div className="CoinPanel-Description">
+                    Blue is for the head, pink is for the tail
+                </div>
                 <Coin className="CoinPanel-Coin" face={ face } />
             </div>
         );
