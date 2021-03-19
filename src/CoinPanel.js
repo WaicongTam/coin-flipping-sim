@@ -5,10 +5,11 @@ class CoinPanel extends Component {
 
     render() {
 
+        let face = this.props.face;
+
         return (
-
             <div>
-
+                <Coin className="CoinPanel-Coin" face={ face } />
             </div>
         );
     }
