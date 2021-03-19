@@ -9,7 +9,7 @@ class CoinPanel extends Component {
         let face = this.props.face;
 
         return (
-            <div>
+            <div className="CoinPanel">
                 <Coin className="CoinPanel-Coin" face={ face } />
             </div>
         );
