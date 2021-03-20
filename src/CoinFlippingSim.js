@@ -39,7 +39,11 @@ class CoinFlippingSim extends Component {
                 </div>
 
                 <div>
-                    <InputPanel />
+                    <InputPanel
+                        alpha={ this.props.alpha }
+                        beta={ this.props.beta }
+                        realProb={ this.props.realProb }
+                    />
                 </div>
 
                 <div className="CoinFlippingSim-PlottingPanel">
