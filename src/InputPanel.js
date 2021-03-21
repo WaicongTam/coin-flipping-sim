@@ -20,6 +20,10 @@ class InputPanel extends Component {
         this.setState({
             [e.target.name]: e.target.value,
         });
+
+        this.setState(st => {
+            this.props.updateParameters(st);
+        })
     }
 
     render() {

@@ -15,6 +15,8 @@ class CoinFlippingSim extends Component {
             realProb: this.props.realProb,
             table: this.props.table,
         }
+
+        this.updateParameters = this.updateParameters.bind(this);
     }
 
     static defaultProps = {
@@ -31,6 +33,10 @@ class CoinFlippingSim extends Component {
         ]
     }
 
+    updateParameters(parameters) {
+        this.setState(parameters);
+    }
+
     render() {
         return (
             <div className="CoinFlippingSim">
@@ -43,6 +49,7 @@ class CoinFlippingSim extends Component {
                         alpha={ this.props.alpha }
                         beta={ this.props.beta }
                         realProb={ this.props.realProb }
+                        updateParameters={ this.updateParameters }
                     />
                 </div>
 
