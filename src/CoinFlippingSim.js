@@ -14,6 +14,9 @@ class CoinFlippingSim extends Component {
             realProb: this.props.realProb,
             table: this.props.table,
         }
+
+        this.handleFlipButton = this.handleFlipButton.bind(this);
+        this.handleResetButton = this.handleResetButton.bind(this);
     }
 
     static defaultProps = {
@@ -30,6 +33,14 @@ class CoinFlippingSim extends Component {
         ]
     }
 
+    handleFlipButton(e) {
+        
+    }
+
+    handleResetButton(e) {
+        
+    }
+
     render() {
         return (
             <div className="CoinFlippingSim">
@@ -39,6 +50,16 @@ class CoinFlippingSim extends Component {
     
                 <div className="CoinFlippingSim-PlottingPanel">
                     <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
+                </div>
+
+                <div>
+                    <button onClick={ this.handleFlipButton }>
+                        Flip!
+                    </button>
+
+                    <button onClick={ this.handleResetButton }>
+                        Reset
+                    </button>
                 </div>
             </div>
         );
