@@ -14,6 +14,7 @@ class CoinFlippingSim extends Component {
             beta: this.props.beta,
             face: this.props.face,
             realProb: this.props.realProb,
+            knowledge: this.props.alpha / (this.props.alpha + this.props.beta),
             sequence: this.props.sequence,
             table: this.props.table,
         }
