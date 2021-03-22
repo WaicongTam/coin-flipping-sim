@@ -29,11 +29,11 @@ class CoinFlippingSim extends Component {
         realProb: 0.5,
         table: [
             {
-                'result': '-',
-                'history': '-',
-                'knowledge': 0.5,
+                result: '-',
+                history: [],
+                knowledge: 0.5,
             },
-        ]
+        ],
     }
 
     updateParameters(parameters) {
@@ -41,7 +41,11 @@ class CoinFlippingSim extends Component {
     }
 
     handleFlipButton(e) {
-        
+        let randomNumber = Math.random();
+        let newFace = randomNumber >= this.state.realProb ? 'head' : 'tail';
+        this.setState({
+            face: newFace,
+        });
     }
 
     handleResetButton(e) {
