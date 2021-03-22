@@ -41,7 +41,11 @@ class CoinFlippingSim extends Component {
     }
 
     handleFlipButton(e) {
-        
+        let randomNumber = Math.random();
+        let newFace = randomNumber >= this.state.realProb ? 'head' : 'tail';
+        this.setState({
+            face: newFace,
+        });
     }
 
     handleResetButton(e) {
