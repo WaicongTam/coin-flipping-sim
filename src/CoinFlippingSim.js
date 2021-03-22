@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
+import InputPanel from './InputPanel';
 
 class CoinFlippingSim extends Component {
 
@@ -14,6 +15,8 @@ class CoinFlippingSim extends Component {
             realProb: this.props.realProb,
             table: this.props.table,
         }
+
+        this.updateParameters = this.updateParameters.bind(this);
 
         this.handleFlipButton = this.handleFlipButton.bind(this);
         this.handleResetButton = this.handleResetButton.bind(this);
@@ -33,12 +36,22 @@ class CoinFlippingSim extends Component {
         ]
     }
 
+    updateParameters(parameters) {
+        this.setState(parameters);
+    }
+
     handleFlipButton(e) {
         
     }
 
     handleResetButton(e) {
-        
+        this.setState({
+            alpha: this.props.alpha,
+            beta: this.props.beta,
+            face: this.props.face,
+            realProb: this.props.realProb,
+            table: this.props.table,
+        });
     }
 
     render() {
@@ -47,7 +60,17 @@ class CoinFlippingSim extends Component {
                 <div className="CoinFlippingSim-CoinPanel">
                     <CoinPanel face={ this.state.face }/>
                 </div>
-    
+
+                <div>
+                    <InputPanel
+                        alpha={ this.state.alpha }
+                        beta={ this.state.beta }
+                        realProb={ this.state.realProb }
+                        updateParameters={ this.updateParameters }
+                        reset={ this.handleResetButton }
+                    />
+                </div>
+
                 <div className="CoinFlippingSim-PlottingPanel">
                     <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
                 </div>
