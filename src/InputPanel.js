@@ -21,7 +21,7 @@ class InputPanel extends Component {
         e.preventDefault();
 
         this.setState({
-            [e.target.name]: e.target.value,
+            [e.target.name]: e.target.value.length === 0 ? '' : parseInt(e.target.value),
         });
 
         this.setState(st => {

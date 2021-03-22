@@ -20,7 +20,7 @@ class TablePanel extends Component {
                                 { r.result }
                             </td>
                             <td>
-                                { r.history.length > 0 ? `[${r.history.join(', ')}]` : '-' }
+                                { r.sequence.length > 0 ? `[${r.sequence.join(', ')}]` : '-' }
                             </td>
                             <td>
                                 { r.knowledge }
