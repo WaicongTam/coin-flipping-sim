@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
 import InputPanel from './InputPanel';
+import TablePanel from './TablePanel';
 
 class CoinFlippingSim extends Component {
 
@@ -29,6 +30,7 @@ class CoinFlippingSim extends Component {
         realProb: 0.5,
         table: [
             {
+                number: 0,
                 result: '-',
                 history: [],
                 knowledge: 0.5,
@@ -43,8 +45,14 @@ class CoinFlippingSim extends Component {
     handleFlipButton(e) {
         let randomNumber = Math.random();
         let newFace = randomNumber >= this.state.realProb ? 'H' : 'T';
+        let newHistory = [...this.state.table.slice(-1)[0].history, newFace]
         this.setState({
             face: newFace,
+            table: [...this.state.table, {
+                number: this.state.table.length,
+                result: newFace,
+                history: newHistory,
+            }],
         });
     }
 
@@ -88,6 +96,8 @@ class CoinFlippingSim extends Component {
                         Reset
                     </button>
                 </div>
+
+                <TablePanel data={ this.state.table }/>
             </div>
         );
     }
