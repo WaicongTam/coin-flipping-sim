@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
 import InputPanel from './InputPanel';
+import TablePanel from './TablePanel';
 
 class CoinFlippingSim extends Component {
 
@@ -88,6 +89,8 @@ class CoinFlippingSim extends Component {
                         Reset
                     </button>
                 </div>
+
+                <TablePanel />
             </div>
         );
     }
