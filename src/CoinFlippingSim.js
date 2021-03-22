@@ -45,12 +45,13 @@ class CoinFlippingSim extends Component {
     handleFlipButton(e) {
         let randomNumber = Math.random();
         let newFace = randomNumber >= this.state.realProb ? 'head' : 'tail';
+        let newHistory = [...this.state.table.slice(-1)[0].history, newFace]
         this.setState({
             face: newFace,
             table: [...this.state.table, {
                 number: this.state.table.length,
                 result: newFace,
-                history: [...this.state.table.slice(-1)[0].history, newFace],
+                history: newHistory,
             }],
         });
     }
