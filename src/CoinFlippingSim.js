@@ -25,7 +25,7 @@ class CoinFlippingSim extends Component {
     static defaultProps = {
         alpha: 2,
         beta: 2,
-        face: 'head',
+        face: 'H',
         realProb: 0.5,
         table: [
             {
@@ -42,7 +42,7 @@ class CoinFlippingSim extends Component {
 
     handleFlipButton(e) {
         let randomNumber = Math.random();
-        let newFace = randomNumber >= this.state.realProb ? 'head' : 'tail';
+        let newFace = randomNumber >= this.state.realProb ? 'H' : 'T';
         this.setState({
             face: newFace,
         });
