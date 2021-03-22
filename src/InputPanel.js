@@ -17,13 +17,16 @@ class InputPanel extends Component {
     }
 
     handleChange(e) {
+
+        e.preventDefault();
+
         this.setState({
             [e.target.name]: e.target.value,
         });
 
         this.setState(st => {
             this.props.updateParameters(st);
-        })
+        });
     }
 
     render() {
