@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './TablePanel.css';
 
 class TablePanel extends Component {
 
