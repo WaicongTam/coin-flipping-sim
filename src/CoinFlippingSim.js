@@ -10,6 +10,7 @@ class CoinFlippingSim extends Component {
         super(props);
 
         this.state = {
+            isFlipping: false,
             alpha: this.props.alpha,
             beta: this.props.beta,
             face: this.props.face,
@@ -67,7 +68,7 @@ class CoinFlippingSim extends Component {
             let newKnowledge = newAlpha / (newAlpha + newBeta);
             return {
                 face: newFace,
-            table: [...this.state.table, {
+                isFlipping: true,
                 sequence: newSequence,
                 alpha: newAlpha,
                 beta: newBeta, 
@@ -87,6 +88,7 @@ class CoinFlippingSim extends Component {
             alpha: this.props.alpha,
             beta: this.props.beta,
             face: this.props.face,
+            isFlipping: false,
             realProb: this.props.realProb,
             sequence: this.props.sequence,
             table: this.props.table,
@@ -106,6 +108,7 @@ class CoinFlippingSim extends Component {
                         beta={ this.state.beta }
                         realProb={ this.state.realProb }
                         updateParameters={ this.updateParameters }
+                        isFlipping={ this.state.isFlipping }
                         reset={ this.handleResetButton }
                     />
                 </div>

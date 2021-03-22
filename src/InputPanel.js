@@ -38,6 +38,7 @@ class InputPanel extends Component {
                     id="realProb"
                     name="realProb"
                     value={ this.props.realProb }
+                    disabled={ this.props.isFlipping }
                     onChange={ this.handleChange }
                 />
                 <label htmlFor="alpha">Alpha</label>
@@ -45,6 +46,7 @@ class InputPanel extends Component {
                     id="alpha"
                     name="alpha"
                     value={ this.props.alpha }
+                    disabled={ this.props.isFlipping }
                     onChange={ this.handleChange }
                 />
                 <label>Beta</label>
@@ -52,6 +54,7 @@ class InputPanel extends Component {
                     id="beta"
                     name="beta"
                     value={ this.props.beta }
+                    disabled={ this.props.isFlipping }
                     onChange={ this.handleChange }
                 />
             </form>
