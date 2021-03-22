@@ -30,6 +30,7 @@ class CoinFlippingSim extends Component {
         realProb: 0.5,
         table: [
             {
+                number: 0,
                 result: '-',
                 history: [],
                 knowledge: 0.5,
