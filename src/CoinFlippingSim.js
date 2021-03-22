@@ -29,11 +29,11 @@ class CoinFlippingSim extends Component {
         realProb: 0.5,
         table: [
             {
-                'result': '-',
-                'history': '-',
-                'knowledge': 0.5,
+                result: '-',
+                history: [],
+                knowledge: 0.5,
             },
-        ]
+        ],
     }
 
     updateParameters(parameters) {
