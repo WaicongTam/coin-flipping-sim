@@ -47,6 +47,11 @@ class CoinFlippingSim extends Component {
         let newFace = randomNumber >= this.state.realProb ? 'head' : 'tail';
         this.setState({
             face: newFace,
+            table: [...this.state.table, {
+                number: this.state.table.length,
+                result: newFace,
+                history: [...this.state.table.slice(-1)[0].history, newFace],
+            }],
         });
     }
 
