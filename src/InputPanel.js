@@ -37,21 +37,21 @@ class InputPanel extends Component {
                 <input
                     id="realProb"
                     name="realProb"
-                    value={ this.state.realProb }
+                    value={ this.props.realProb }
                     onChange={ this.handleChange }
                 />
                 <label htmlFor="alpha">Alpha</label>
                 <input
                     id="alpha"
                     name="alpha"
-                    value={ this.state.alpha }
+                    value={ this.props.alpha }
                     onChange={ this.handleChange }
                 />
                 <label>Beta</label>
                 <input
                     id="beta"
                     name="beta"
-                    value={ this.state.beta }
+                    value={ this.props.beta }
                     onChange={ this.handleChange }
                 />
             </form>

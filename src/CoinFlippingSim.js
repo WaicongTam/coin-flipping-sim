@@ -45,7 +45,13 @@ class CoinFlippingSim extends Component {
     }
 
     handleResetButton(e) {
-        
+        this.setState({
+            alpha: this.props.alpha,
+            beta: this.props.beta,
+            face: this.props.face,
+            realProb: this.props.realProb,
+            table: this.props.table,
+        });
     }
 
     render() {
@@ -57,10 +63,11 @@ class CoinFlippingSim extends Component {
 
                 <div>
                     <InputPanel
-                        alpha={ this.props.alpha }
-                        beta={ this.props.beta }
-                        realProb={ this.props.realProb }
+                        alpha={ this.state.alpha }
+                        beta={ this.state.beta }
+                        realProb={ this.state.realProb }
                         updateParameters={ this.updateParameters }
+                        reset={ this.handleResetButton }
                     />
                 </div>
 
