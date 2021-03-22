@@ -91,7 +91,7 @@ class CoinFlippingSim extends Component {
                     </button>
                 </div>
 
-                <TablePanel />
+                <TablePanel data={ this.state.table }/>
             </div>
         );
     }
