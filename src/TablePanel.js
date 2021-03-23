@@ -16,19 +16,18 @@ class TablePanel extends Component {
                     </tr>
                 </thead>
 
-                <tbody>
-                    
+                <tbody>   
                     { this.props.data.map(r => <tr className="Table-Record">
-                        <td>
+                        <td className="number">
                             { r.number }
                         </td>
-                        <td>
+                        <td className="result">
                             { r.result }
                         </td>
-                        <td>
+                        <td className="sequence">
                             { r.sequence.length > 0 ? `[${r.sequence.join(', ')}]` : '-' }
                         </td>
-                        <td>
+                        <td className="knowledge">
                             { r.knowledge }
                         </td>
                     </tr>) }
