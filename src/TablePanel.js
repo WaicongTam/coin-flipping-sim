@@ -8,12 +8,14 @@ class TablePanel extends Component {
         return (
             <Table>
                 <thead>
-                    <th className="Table-Header"># of flipping</th>
-                    <th className="Table-Header">Result</th>
-                    <th className="Table-Header">Sequence</th>
-                    <th className="Table-Header">Knowledge</th>
+                    <tr>
+                        <th className="Table-Header"># of flipping</th>
+                        <th className="Table-Header">Result</th>
+                        <th className="Table-Header">Sequence</th>
+                        <th className="Table-Header">Knowledge</th>
+                    </tr>
                 </thead>
-                
+
                 <tbody>
                     
                     { this.props.data.map(r => <tr className="Table-Record">
