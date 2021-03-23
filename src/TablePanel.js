@@ -7,11 +7,15 @@ class TablePanel extends Component {
     render() {
         return (
             <Table>
-                <tbody>
+                <thead>
                     <th className="Table-Header"># of flipping</th>
                     <th className="Table-Header">Result</th>
                     <th className="Table-Header">Sequence</th>
                     <th className="Table-Header">Knowledge</th>
+                </thead>
+                
+                <tbody>
+                    
                     { this.props.data.map(r => <tr className="Table-Record">
                         <td>
                             { r.number }
