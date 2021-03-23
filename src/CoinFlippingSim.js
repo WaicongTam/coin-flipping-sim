@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
@@ -105,31 +105,41 @@ class CoinFlippingSim extends Component {
                         <CoinPanel face={ this.state.face }/>
                     </Col>
 
-                    <Col className="CoinFlippingSim-InputPanel">
-                        <InputPanel
-                            alpha={ this.state.alpha }
-                            beta={ this.state.beta }
-                            realProb={ this.state.realProb }
-                            updateParameters={ this.updateParameters }
-                            isFlipping={ this.state.isFlipping }
-                            reset={ this.handleResetButton }
-                        />
+                    <Col>
+                        <Row className="CoinFlippingSim-InputPanel">
+                            <InputPanel
+                                alpha={ this.state.alpha }
+                                beta={ this.state.beta }
+                                realProb={ this.state.realProb }
+                                updateParameters={ this.updateParameters }
+                                isFlipping={ this.state.isFlipping }
+                                reset={ this.handleResetButton }
+                            />
+                        </Row>
+                        
+                        <Row className="CoinFlippingSim-ButtonPanel">
+                            <ButtonToolbar className="CoinFlippingSim-ButtonPanel">
+                                <Button
+                                    onClick={ this.handleFlipButton }
+                                    size="lg"
+                                    variant="primary">
+                                    Flip!
+                                </Button>{' '}
+
+                                <Button
+                                    onClick={ this.handleResetButton }
+                                    size="lg"
+                                    variant="danger">
+                                    Reset
+                                </Button>{' '}
+                            </ButtonToolbar>
+                        </Row>
                     </Col>
                 </Row>
 
                 <Row>
                     <Col className="CoinFlippingSim-PlottingPanel">
                         <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
-                    </Col>
-
-                    <Col className="CoinFlippingSim-ButtonPanel">
-                        <button onClick={ this.handleFlipButton }>
-                            Flip!
-                        </button>
-
-                        <button onClick={ this.handleResetButton }>
-                            Reset
-                        </button>
                     </Col>
 
                     <Col className="CoinFlippingSim-TablePanel">
