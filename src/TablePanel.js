@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Table, } from 'react-bootstrap';
 import './TablePanel.css';
 
 class TablePanel extends Component {
@@ -6,7 +7,7 @@ class TablePanel extends Component {
     render() {
         return (
             <div>
-                <table>
+                <Table>
                     <tbody>
                         <th className="Table-Header"># of flipping</th>
                         <th className="Table-Header">Result</th>
@@ -20,14 +21,14 @@ class TablePanel extends Component {
                                 { r.result }
                             </td>
                             <td>
-                                { r.history.length > 0 ? `[${r.history.join(', ')}]` : '-' }
+                                { r.sequence.length > 0 ? `[${r.sequence.join(', ')}]` : '-' }
                             </td>
                             <td>
                                 { r.knowledge }
                             </td>
                         </tr>) }
                     </tbody>
-                </table>
+                </Table>
             </div>
         );
     }
