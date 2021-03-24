@@ -9,10 +9,10 @@ class TablePanel extends Component {
             <Table>
                 <thead>
                     <tr>
-                        <th className="Table-Header"># of flipping</th>
-                        <th className="Table-Header">Result</th>
-                        <th className="Table-Header">Sequence</th>
-                        <th className="Table-Header">Knowledge</th>
+                        <th># of flipping</th>
+                        <th>Result</th>
+                        <th>Sequence</th>
+                        <th>Knowledge</th>
                     </tr>
                 </thead>
 
