@@ -5,6 +5,10 @@ thead {
     text-align: center;
 }
 
-.Table-Record {
+tr {
     text-align: center;
+}
+
+.sequence {
+    text-align: left;
 }
