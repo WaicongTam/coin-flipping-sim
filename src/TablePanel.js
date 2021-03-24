@@ -17,7 +17,7 @@ class TablePanel extends Component {
                 </thead>
 
                 <tbody>   
-                    { this.props.data.map(r => <tr className="Table-Record">
+                    { this.props.data.map(r => <tr className="record">
                         <td className="number">
                             { r.number }
                         </td>
