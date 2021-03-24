@@ -99,7 +99,7 @@ class CoinFlippingSim extends Component {
 
     render() {
         return (
-            <Container className="CoinFlippingSim">
+            <Container fluid className="CoinFlippingSim">
                 <Row>
                     <Col className="CoinFlippingSim-CoinPanel">
                         <CoinPanel face={ this.state.face }/>
