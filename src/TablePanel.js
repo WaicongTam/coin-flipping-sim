@@ -6,7 +6,7 @@ class TablePanel extends Component {
 
     render() {
         return (
-            <Table>
+            <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
                         <th># of flipping</th>
