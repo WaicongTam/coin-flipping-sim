@@ -9,10 +9,10 @@ class TablePanel extends Component {
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
-                        <th># of flipping</th>
-                        <th>Result</th>
-                        <th>Sequence</th>
-                        <th>Knowledge</th>
+                        <th className="number">#</th>
+                        <th className="result">Result</th>
+                        <th className="sequence">Sequence</th>
+                        <th className="knowledge">Knowledge</th>
                     </tr>
                 </thead>
 
