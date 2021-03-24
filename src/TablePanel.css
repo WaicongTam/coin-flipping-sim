@@ -1,0 +1,30 @@
+thead {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+}
+
+td.sequence {
+    text-align: left;
+}
+
+td.knowledge {
+    text-align: left;
+    word-wrap: initial;
+}
+
+th.number, th.result {
+    width: 10%;
+}
+
+th.sequence {
+    width: 50%;
+}
+
+th.knowledge {
+    width: 30%;
+}

@@ -1,26 +1,10 @@
 import './App.css';
-import PlottingPanel from './PlottingPanel';
+import CoinFlippingSim from './CoinFlippingSim';
 
 function App() {
   return (
     <div className="App">
-
-      <div className="App-CoinPanel">
-
-      </div>
-
-      <div className="App-ControlPanel">
-        <PlottingPanel alpha="2" beta="2" />
-      </div>
-
-      <div className="App-HistoryPanel">
-
-      </div>
-
-      <div className="App-PlotPanel">
-
-      </div>
-      
+      <CoinFlippingSim />
     </div>
   );
 }
