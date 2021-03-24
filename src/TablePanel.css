@@ -10,4 +10,14 @@ tr {
 
 .sequence {
     text-align: left;
+th.number, th.result {
+    width: 10%;
+}
+
+th.sequence {
+    width: 50%;
+}
+
+th.knowledge {
+    width: 30%;
 }
