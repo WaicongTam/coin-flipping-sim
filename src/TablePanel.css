@@ -8,7 +8,10 @@ tr {
     text-align: center;
 }
 
-.sequence {
+td.sequence {
+    text-align: left;
+}
+
 td.knowledge {
     text-align: left;
     word-wrap: initial;
