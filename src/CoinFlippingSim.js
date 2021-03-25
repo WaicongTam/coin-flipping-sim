@@ -61,7 +61,7 @@ class CoinFlippingSim extends Component {
 
     handleFlipButton(e) {
         let randomNumber = Math.random();
-        let newFace = randomNumber >= this.state.realProb ? 'H' : 'T';
+        let newFace = randomNumber <= this.state.realProb ? 'H' : 'T';
         
         this.setState(st => {
             let newSequence = [...st.sequence, newFace]
