@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form, } from 'react-bootstrap';
 import './InputPanel.css';
 
 class InputPanel extends Component {
@@ -32,32 +33,40 @@ class InputPanel extends Component {
     render() {
 
         return (
-            <form className="InputPanel">
-                <label htmlFor="realProb">Real probability</label>
-                <input
-                    id="realProb"
-                    name="realProb"
-                    value={ this.props.realProb }
-                    disabled={ this.props.isFlipping }
-                    onChange={ this.handleChange }
-                />
-                <label htmlFor="alpha">Alpha</label>
-                <input
-                    id="alpha"
-                    name="alpha"
-                    value={ this.props.alpha }
-                    disabled={ this.props.isFlipping }
-                    onChange={ this.handleChange }
-                />
-                <label>Beta</label>
-                <input
-                    id="beta"
-                    name="beta"
-                    value={ this.props.beta }
-                    disabled={ this.props.isFlipping }
-                    onChange={ this.handleChange }
-                />
-            </form>
+            <Form className="InputPanel">
+                <Form.Group>
+                    <Form.Label htmlFor="realProb">Real probability</Form.Label>
+                    <Form.Control
+                        id="realProb"
+                        name="realProb"
+                        value={ this.props.realProb }
+                        disabled={ this.props.isFlipping }
+                        onChange={ this.handleChange }
+                    />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label htmlFor="alpha">Alpha</Form.Label>
+                    <Form.Control
+                        id="alpha"
+                        name="alpha"
+                        value={ this.props.alpha }
+                        disabled={ this.props.isFlipping }
+                        onChange={ this.handleChange }
+                    />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>Beta</Form.Label>
+                    <Form.Control
+                        id="beta"
+                        name="beta"
+                        value={ this.props.beta }
+                        disabled={ this.props.isFlipping }
+                        onChange={ this.handleChange }
+                    />
+                </Form.Group>
+            </Form>
         )
     }
 }

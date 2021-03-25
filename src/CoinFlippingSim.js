@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Container, Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
 import InputPanel from './InputPanel';
@@ -97,38 +99,54 @@ class CoinFlippingSim extends Component {
 
     render() {
         return (
-            <div className="CoinFlippingSim">
-                <div className="CoinFlippingSim-CoinPanel">
-                    <CoinPanel face={ this.state.face }/>
-                </div>
+            <Container fluid className="CoinFlippingSim">
+                <Row>
+                    <Col className="CoinFlippingSim-CoinPanel">
+                        <CoinPanel face={ this.state.face }/>
+                    </Col>
 
-                <div>
-                    <InputPanel
-                        alpha={ this.state.alpha }
-                        beta={ this.state.beta }
-                        realProb={ this.state.realProb }
-                        updateParameters={ this.updateParameters }
-                        isFlipping={ this.state.isFlipping }
-                        reset={ this.handleResetButton }
-                    />
-                </div>
+                    <Col>
+                        <Row className="CoinFlippingSim-InputPanel">
+                            <InputPanel
+                                alpha={ this.state.alpha }
+                                beta={ this.state.beta }
+                                realProb={ this.state.realProb }
+                                updateParameters={ this.updateParameters }
+                                isFlipping={ this.state.isFlipping }
+                                reset={ this.handleResetButton }
+                            />
+                        </Row>
+                        
+                        <Row className="CoinFlippingSim-ButtonPanel">
+                            <ButtonToolbar className="CoinFlippingSim-ButtonPanel">
+                                <Button
+                                    onClick={ this.handleFlipButton }
+                                    size="lg"
+                                    variant="primary">
+                                    Flip!
+                                </Button>{' '}
 
-                <div className="CoinFlippingSim-PlottingPanel">
-                    <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
-                </div>
+                                <Button
+                                    onClick={ this.handleResetButton }
+                                    size="lg"
+                                    variant="danger">
+                                    Reset
+                                </Button>{' '}
+                            </ButtonToolbar>
+                        </Row>
+                    </Col>
+                </Row>
 
-                <div>
-                    <button onClick={ this.handleFlipButton }>
-                        Flip!
-                    </button>
+                <Row>
+                    <Col className="CoinFlippingSim-PlottingPanel">
+                        <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
+                    </Col>
 
-                    <button onClick={ this.handleResetButton }>
-                        Reset
-                    </button>
-                </div>
-
-                <TablePanel data={ this.state.table }/>
-            </div>
+                    <Col className="CoinFlippingSim-TablePanel">
+                        <TablePanel data={ this.state.table }/>
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }
