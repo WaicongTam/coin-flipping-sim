@@ -22,8 +22,15 @@ class InputPanel extends Component {
         e.preventDefault();
 
         this.setState({
-            [e.target.name]: e.target.value.length === 0 ? '' : parseInt(e.target.value),
+            [e.target.name]: e.target.value,
         });
+
+        this.setState(st => {
+            return {
+                alpha: st.alpha.length > 0 ? parseInt(st.alpha) : st.alpha,
+                beta: st.beta.length > 0 ? parseInt(st.beta) : st.beta,
+            };
+        })
 
         this.setState(st => {
             this.props.updateParameters(st);
