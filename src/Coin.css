@@ -1,11 +1,4 @@
-.Coin {
-    font-size: 15em;
-}
-
-.H {
-    color: rgb(98, 0, 255);
-}
-
-.T {
-    color: pink;
+.coin-image {
+    width: 300px;
+    height: 100%;
 }
