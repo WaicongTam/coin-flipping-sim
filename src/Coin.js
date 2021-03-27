@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './Coin.css'
+import './Coin.css';
+import head from './coin-head.jpg';
+import tail from './coin-tail.jpg';
 
 class Coin extends Component {
 
@@ -10,7 +12,11 @@ class Coin extends Component {
         return (
 
             <div>
-                <i class={`Coin fas fa-circle ${face}`}></i>
+                <img
+                    src={ face === 'H' ? head : tail }
+                    alt={ face === 'H' ? 'Head of coin' : 'Tail of coin' }
+                    className="coin-image"
+                />
             </div>
         );
     }
