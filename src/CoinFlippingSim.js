@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
+import { Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
@@ -99,7 +99,7 @@ class CoinFlippingSim extends Component {
 
     render() {
         return (
-            <Container fluid className="CoinFlippingSim">
+            <div className="CoinFlippingSim">
                 <Row>
                     <Col className="CoinFlippingSim-CoinPanel">
                         <CoinPanel face={ this.state.face }/>
@@ -146,7 +146,7 @@ class CoinFlippingSim extends Component {
                         <TablePanel data={ this.state.table }/>
                     </Col>
                 </Row>
-            </Container>
+            </div>
         );
     }
 }
