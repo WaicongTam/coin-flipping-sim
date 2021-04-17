@@ -11,3 +11,19 @@
     display: flex;
     flex-direction: column;
 }
+
+#CoinFlippingSim-ControlPanel {
+    width: 50%;
+}
+
+#CoinFlippingSim-PlottingPanel {
+    width: 50%;
+}
+
+#CoinFlippingSim-TablePanel {
+    width: 50%;
+}
+
+#CoinFlippingSim-CoinPanel {
+    width: 50%;
+}
