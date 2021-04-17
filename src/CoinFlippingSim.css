@@ -1,6 +1,12 @@
 .CoinFlippingSim {
     display: flex;
+    align-items: stretch;
     justify-content: center;
+    flex-direction:column;
+    height: 80%;
+    width: 80%;
+}
+
 .row {
     display: flex;
     flex-direction: row;
