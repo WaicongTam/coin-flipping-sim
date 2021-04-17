@@ -5,6 +5,7 @@ import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
 import InputPanel from './InputPanel';
 import TablePanel from './TablePanel';
+import './CoinFlippingSim.css';
 
 class CoinFlippingSim extends Component {
 
