@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
+import { Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
@@ -61,7 +61,7 @@ class CoinFlippingSim extends Component {
 
     handleFlipButton(e) {
         let randomNumber = Math.random();
-        let newFace = randomNumber >= this.state.realProb ? 'H' : 'T';
+        let newFace = randomNumber <= this.state.realProb ? 'H' : 'T';
         
         this.setState(st => {
             let newSequence = [...st.sequence, newFace]
@@ -99,8 +99,8 @@ class CoinFlippingSim extends Component {
 
     render() {
         return (
-            <Container className="CoinFlippingSim">
-                <Row>
+            <div className="CoinFlippingSim">
+                <div className="row" id="upper-row">
                     <Col className="CoinFlippingSim-CoinPanel">
                         <CoinPanel face={ this.state.face }/>
                     </Col>
@@ -135,18 +135,18 @@ class CoinFlippingSim extends Component {
                             </ButtonToolbar>
                         </Row>
                     </Col>
-                </Row>
+                </div>
 
-                <Row>
-                    <Col className="CoinFlippingSim-PlottingPanel">
+                <div className="row" id="lower-row">
+                    <div className="CoinFlippingSim-PlottingPanel">
                         <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
-                    </Col>
+                    </div>
 
-                    <Col className="CoinFlippingSim-TablePanel">
+                    <div className="CoinFlippingSim-TablePanel">
                         <TablePanel data={ this.state.table }/>
-                    </Col>
-                </Row>
-            </Container>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
