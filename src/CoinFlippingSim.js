@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
+import { Button, ButtonToolbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
@@ -102,12 +102,12 @@ class CoinFlippingSim extends Component {
         return (
             <div className="CoinFlippingSim">
                 <div className="row" id="upper-row">
-                    <Col className="CoinFlippingSim-CoinPanel">
+                    <div className="CoinFlippingSim-CoinPanel">
                         <CoinPanel face={ this.state.face }/>
-                    </Col>
+                    </div>
 
-                    <Col>
-                        <Row className="CoinFlippingSim-InputPanel">
+                    <div className="row">
+                        <div id="CoinFlippingSim-InputPanel">
                             <InputPanel
                                 alpha={ this.state.alpha }
                                 beta={ this.state.beta }
@@ -116,9 +116,9 @@ class CoinFlippingSim extends Component {
                                 isFlipping={ this.state.isFlipping }
                                 reset={ this.handleResetButton }
                             />
-                        </Row>
+                        </div>
                         
-                        <Row className="CoinFlippingSim-ButtonPanel">
+                        <div id="CoinFlippingSim-ButtonPanel">
                             <ButtonToolbar className="CoinFlippingSim-ButtonPanel">
                                 <Button
                                     onClick={ this.handleFlipButton }
@@ -134,16 +134,16 @@ class CoinFlippingSim extends Component {
                                     Reset
                                 </Button>{' '}
                             </ButtonToolbar>
-                        </Row>
-                    </Col>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="row" id="lower-row">
-                    <div className="CoinFlippingSim-PlottingPanel">
+                    <div id="CoinFlippingSim-PlottingPanel">
                         <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
                     </div>
 
-                    <div className="CoinFlippingSim-TablePanel">
+                    <div id="CoinFlippingSim-TablePanel">
                         <TablePanel data={ this.state.table }/>
                     </div>
                 </div>
