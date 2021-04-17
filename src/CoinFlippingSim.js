@@ -118,22 +118,18 @@ class CoinFlippingSim extends Component {
                             />
                         </div>
                         
-                        <div id="CoinFlippingSim-ButtonPanel">
-                            <ButtonToolbar className="CoinFlippingSim-ButtonPanel">
-                                <Button
-                                    onClick={ this.handleFlipButton }
-                                    size="lg"
-                                    variant="primary">
-                                    Flip!
-                                </Button>{' '}
+                        <div id="CoinFlippingSim-ButtonPanel">  
+                            <button
+                                onClick={ this.handleFlipButton }
+                                id="flip-button">
+                                Flip!
+                            </button>
 
-                                <Button
-                                    onClick={ this.handleResetButton }
-                                    size="lg"
-                                    variant="danger">
-                                    Reset
-                                </Button>{' '}
-                            </ButtonToolbar>
+                            <button
+                                onClick={ this.handleResetButton }
+                                id="reset-button">
+                                Reset
+                            </button>
                         </div>
                     </div>
                 </div>
