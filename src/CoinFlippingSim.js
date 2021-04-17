@@ -102,7 +102,7 @@ class CoinFlippingSim extends Component {
         return (
             <div className="CoinFlippingSim">
                 <div className="row" id="upper-row">
-                    <div className="CoinFlippingSim-CoinPanel">
+                    <div id="CoinFlippingSim-CoinPanel">
                         <CoinPanel face={ this.state.face }/>
                     </div>
 
