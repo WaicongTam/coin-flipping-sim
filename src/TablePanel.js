@@ -24,10 +24,10 @@ class TablePanel extends Component {
                             { r.result }
                         </td>
                         <td className="sequence">
-                            { r.sequence.length > 0 ? `[${r.sequence.join(', ')}]` : '-' }
+                            { `[${r.sequence.join(', ')}]` }
                         </td>
                         <td className="knowledge">
-                            { r.knowledge }
+                            { r.knowledge.toFixed(6) }
                         </td>
                     </tr>) }
                 </tbody>
