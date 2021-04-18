@@ -5,7 +5,7 @@ class TablePanel extends Component {
 
     render() {
         return (
-            <table striped bordered hover size="sm">
+            <table>
                 <thead>
                     <tr>
                         <th className="number">#</th>
