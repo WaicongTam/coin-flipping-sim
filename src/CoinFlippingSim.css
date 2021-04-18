@@ -1,12 +1,13 @@
 .CoinFlippingSim {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     flex-direction:column;
     height: 80%;
     width: 80%;
     background-color: beige;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
 }
 
 .row {
@@ -26,7 +27,7 @@
 
 .panel {
     box-sizing: border-box;
-    padding: 1em
+    padding: 1em;
 }
 
 #CoinFlippingSim-ControlPanel {
