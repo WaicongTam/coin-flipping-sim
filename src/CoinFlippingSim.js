@@ -105,8 +105,8 @@ class CoinFlippingSim extends Component {
                         <CoinPanel face={ this.state.face }/>
                     </div>
 
-                    <div className="column" id="CoinFlippingSim-ControlPanel">
-                        <div className="panel" id="CoinFlippingSim-InputPanel">
+                    <div className="panel" id="CoinFlippingSim-ControlPanel">
+                        <div id="CoinFlippingSim-InputPanel">
                             <InputPanel
                                 alpha={ this.state.alpha }
                                 beta={ this.state.beta }
@@ -117,7 +117,7 @@ class CoinFlippingSim extends Component {
                             />
                         </div>
                         
-                        <div className="panel" id="CoinFlippingSim-ButtonPanel">  
+                        <div id="CoinFlippingSim-ButtonPanel">  
                             <button
                                 onClick={ this.handleFlipButton }
                                 id="flip-button">
