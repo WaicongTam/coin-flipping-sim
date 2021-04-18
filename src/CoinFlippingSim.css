@@ -53,3 +53,12 @@
     align-items: center;
     justify-content: center;
 }
+
+button {
+    font-size: 2rem;
+    width: 33%;
+    border-radius: 1rem;
+    margin: 1rem;
+    border-width: none;
+    box-shadow: 0 10px 20px;
+}
