@@ -62,3 +62,13 @@ button {
     border-width: none;
     box-shadow: 0 10px 20px;
 }
+
+#reset-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 210,0);
+}
+
+#flip-button {
+    background-color: rgb(255, 210,0);
+    color: rgb(0, 0, 0);
+}
