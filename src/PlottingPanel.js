@@ -37,7 +37,8 @@ class PlottingPanel extends Component {
                             text: 'p(w)',
                         },
                         fixedrange: true,
-                    }
+                    },
+                    paper_bgcolor: 'beige',
                 }
             }
             useResizeHandler={true}
