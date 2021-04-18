@@ -5,7 +5,7 @@ class TablePanel extends Component {
 
     render() {
         return (
-            <table striped bordered hover size="sm">
+            <table>
                 <thead>
                     <tr>
                         <th className="number">#</th>
@@ -16,7 +16,7 @@ class TablePanel extends Component {
                 </thead>
 
                 <tbody>   
-                    { this.props.data.map(r => <tr className="record">
+                    { this.props.data.map(r => <tr className="record" key={ r.number }>
                         <td className="number">
                             { r.number }
                         </td>
