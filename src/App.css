@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        rgb(0, 0, 0) 33%,
+        rgb(255, 210,0) 33%, 67%,
+        rgb(0, 0, 0) 67%
+    )
+}

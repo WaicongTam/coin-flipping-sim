@@ -1,3 +1,7 @@
+table {
+    width: 100%;
+}
+
 thead {
     padding-left: 10px;
     padding-right: 10px;
@@ -6,6 +10,7 @@ thead {
 
 tr {
     text-align: center;
+    width:100%
 }
 
 td.sequence {
@@ -17,14 +22,18 @@ td.knowledge {
     word-wrap: initial;
 }
 
-th.number, th.result {
+th.number, th.result, td.number, td.result {
     width: 10%;
 }
 
-th.sequence {
+th.sequence, td.sequence {
     width: 50%;
 }
 
-th.knowledge {
+th.knowledge, td.knowledge {
     width: 30%;
+}
+
+table, tr, th, td {
+    border: 1px solid black
 }

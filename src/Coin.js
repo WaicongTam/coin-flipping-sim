@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Coin.css';
-import head from './coin-head.jpg';
-import tail from './coin-tail.jpg';
+import head from './coin-head.png';
+import tail from './coin-tail.png';
 
 class Coin extends Component {
 
