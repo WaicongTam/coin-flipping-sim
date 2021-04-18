@@ -5,6 +5,8 @@
     flex-direction:column;
     height: 80%;
     width: 80%;
+    background-color: beige;
+    border-radius: 10px;
 }
 
 .row {
