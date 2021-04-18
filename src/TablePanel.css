@@ -18,15 +18,15 @@ td.knowledge {
     word-wrap: initial;
 }
 
-th.number, th.result {
+th.number, th.result, td.number, td.result {
     width: 10%;
 }
 
-th.sequence {
+th.sequence, td.sequence {
     width: 50%;
 }
 
-th.knowledge {
+th.knowledge, td.knowledge {
     width: 30%;
 }
 
