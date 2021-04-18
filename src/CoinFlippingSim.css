@@ -12,12 +12,18 @@
 .row {
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
     height: 50%;
+    width: 100%;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+}
+
 .panel {
     box-sizing: border-box;
     padding: 1em
