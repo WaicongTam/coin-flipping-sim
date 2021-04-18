@@ -18,10 +18,9 @@
     width: 100%;
 }
 
-.column {
+#CoinFlippingSim-ControlPanel {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     height: 100%;
 }
 
