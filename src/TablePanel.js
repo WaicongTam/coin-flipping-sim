@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Table, } from 'react-bootstrap';
 import './TablePanel.css';
 
 class TablePanel extends Component {
 
     render() {
         return (
-            <Table striped bordered hover size="sm">
+            <table striped bordered hover size="sm">
                 <thead>
                     <tr>
                         <th className="number">#</th>
@@ -32,7 +31,7 @@ class TablePanel extends Component {
                         </td>
                     </tr>) }
                 </tbody>
-            </Table>
+            </table>
         );
     }
 }
