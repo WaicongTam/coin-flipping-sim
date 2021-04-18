@@ -16,6 +16,9 @@
 .column {
     display: flex;
     flex-direction: column;
+.panel {
+    box-sizing: border-box;
+    padding: 1em
 }
 
 #CoinFlippingSim-ControlPanel {
