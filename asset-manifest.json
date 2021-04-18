@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/coin-flipping-sim/static/css/main.295a1b0e.chunk.css",
-    "main.js": "/coin-flipping-sim/static/js/main.4f1fdef9.chunk.js",
-    "main.js.map": "/coin-flipping-sim/static/js/main.4f1fdef9.chunk.js.map",
-    "runtime-main.js": "/coin-flipping-sim/static/js/runtime-main.3b7d8103.js",
-    "runtime-main.js.map": "/coin-flipping-sim/static/js/runtime-main.3b7d8103.js.map",
+    "main.css": "/coin-flipping-sim/static/css/main.03bf7b6a.chunk.css",
+    "main.js": "/coin-flipping-sim/static/js/main.57c675a1.chunk.js",
+    "main.js.map": "/coin-flipping-sim/static/js/main.57c675a1.chunk.js.map",
+    "runtime-main.js": "/coin-flipping-sim/static/js/runtime-main.718ff22d.js",
+    "runtime-main.js.map": "/coin-flipping-sim/static/js/runtime-main.718ff22d.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/coin-flipping-sim/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.2528da7f.chunk.js": "/coin-flipping-sim/static/js/2.2528da7f.chunk.js",
-    "static/js/2.2528da7f.chunk.js.map": "/coin-flipping-sim/static/js/2.2528da7f.chunk.js.map",
-    "static/js/3.46b7a6e0.chunk.js": "/coin-flipping-sim/static/js/3.46b7a6e0.chunk.js",
-    "static/js/3.46b7a6e0.chunk.js.map": "/coin-flipping-sim/static/js/3.46b7a6e0.chunk.js.map",
+    "static/js/2.9f4418ff.chunk.js": "/coin-flipping-sim/static/js/2.9f4418ff.chunk.js",
+    "static/js/2.9f4418ff.chunk.js.map": "/coin-flipping-sim/static/js/2.9f4418ff.chunk.js.map",
+    "static/js/3.ef27cb28.chunk.js": "/coin-flipping-sim/static/js/3.ef27cb28.chunk.js",
+    "static/js/3.ef27cb28.chunk.js.map": "/coin-flipping-sim/static/js/3.ef27cb28.chunk.js.map",
     "index.html": "/coin-flipping-sim/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/coin-flipping-sim/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.295a1b0e.chunk.css.map": "/coin-flipping-sim/static/css/main.295a1b0e.chunk.css.map",
-    "static/js/2.2528da7f.chunk.js.LICENSE.txt": "/coin-flipping-sim/static/js/2.2528da7f.chunk.js.LICENSE.txt",
-    "static/media/coin-head.436eba2f.jpg": "/coin-flipping-sim/static/media/coin-head.436eba2f.jpg",
-    "static/media/coin-tail.2df29650.jpg": "/coin-flipping-sim/static/media/coin-tail.2df29650.jpg"
+    "static/css/main.03bf7b6a.chunk.css.map": "/coin-flipping-sim/static/css/main.03bf7b6a.chunk.css.map",
+    "static/js/2.9f4418ff.chunk.js.LICENSE.txt": "/coin-flipping-sim/static/js/2.9f4418ff.chunk.js.LICENSE.txt",
+    "static/media/coin-head.0c683bac.png": "/coin-flipping-sim/static/media/coin-head.0c683bac.png",
+    "static/media/coin-tail.51007e01.png": "/coin-flipping-sim/static/media/coin-tail.51007e01.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b7d8103.js",
+    "static/js/runtime-main.718ff22d.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.2528da7f.chunk.js",
-    "static/css/main.295a1b0e.chunk.css",
-    "static/js/main.4f1fdef9.chunk.js"
+    "static/js/2.9f4418ff.chunk.js",
+    "static/css/main.03bf7b6a.chunk.css",
+    "static/js/main.57c675a1.chunk.js"
   ]
 }
