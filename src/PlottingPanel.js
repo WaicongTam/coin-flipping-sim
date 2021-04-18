@@ -24,8 +24,7 @@ class PlottingPanel extends Component {
             ]}
             layout={
                 {
-                    width: 800,
-                    height: 500,
+                    autosize: true,
                     title: 'The probability distribution of w',
                     xaxis: {
                         title: {
@@ -40,8 +39,9 @@ class PlottingPanel extends Component {
                         fixedrange: true,
                     }
                 }
-            
             }
+            useResizeHandler={true}
+            style={{width: "100%", height: "100%"}}
             />
         );
     }
