@@ -29,3 +29,7 @@ th.sequence {
 th.knowledge {
     width: 30%;
 }
+
+table, tr, th, td {
+    border: 1px solid black
+}
