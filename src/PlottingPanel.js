@@ -39,6 +39,7 @@ class PlottingPanel extends Component {
                         fixedrange: true,
                     },
                     paper_bgcolor: 'beige',
+                    plot_bgcolor: 'beige',
                 }
             }
             useResizeHandler={true}
