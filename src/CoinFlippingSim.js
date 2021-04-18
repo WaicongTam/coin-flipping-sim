@@ -102,12 +102,12 @@ class CoinFlippingSim extends Component {
         return (
             <div className="CoinFlippingSim">
                 <div className="row" id="upper-row">
-                    <div id="CoinFlippingSim-CoinPanel">
+                    <div className="panel" id="CoinFlippingSim-CoinPanel">
                         <CoinPanel face={ this.state.face }/>
                     </div>
 
                     <div className="column" id="CoinFlippingSim-ControlPanel">
-                        <div id="CoinFlippingSim-InputPanel">
+                        <div className="panel" id="CoinFlippingSim-InputPanel">
                             <InputPanel
                                 alpha={ this.state.alpha }
                                 beta={ this.state.beta }
@@ -118,7 +118,7 @@ class CoinFlippingSim extends Component {
                             />
                         </div>
                         
-                        <div id="CoinFlippingSim-ButtonPanel">  
+                        <div className="panel" id="CoinFlippingSim-ButtonPanel">  
                             <button
                                 onClick={ this.handleFlipButton }
                                 id="flip-button">
@@ -135,11 +135,11 @@ class CoinFlippingSim extends Component {
                 </div>
 
                 <div className="row" id="lower-row">
-                    <div id="CoinFlippingSim-PlottingPanel">
+                    <div className="panel" id="CoinFlippingSim-PlottingPanel">
                         <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
                     </div>
 
-                    <div id="CoinFlippingSim-TablePanel">
+                    <div className="panel" id="CoinFlippingSim-TablePanel">
                         <TablePanel data={ this.state.table }/>
                     </div>
                 </div>
