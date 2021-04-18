@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, ButtonToolbar } from 'react-bootstrap';
+import { Button, ButtonToolbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PlottingPanel from './PlottingPanel';
 import CoinPanel from './CoinPanel';
 import InputPanel from './InputPanel';
 import TablePanel from './TablePanel';
+import './CoinFlippingSim.css';
 
 class CoinFlippingSim extends Component {
 
@@ -99,14 +100,14 @@ class CoinFlippingSim extends Component {
 
     render() {
         return (
-            <Container fluid className="CoinFlippingSim">
-                <Row>
-                    <Col className="CoinFlippingSim-CoinPanel">
+            <div className="CoinFlippingSim">
+                <div className="row" id="upper-row">
+                    <div className="panel" id="CoinFlippingSim-CoinPanel">
                         <CoinPanel face={ this.state.face }/>
-                    </Col>
+                    </div>
 
-                    <Col>
-                        <Row className="CoinFlippingSim-InputPanel">
+                    <div className="column" id="CoinFlippingSim-ControlPanel">
+                        <div className="panel" id="CoinFlippingSim-InputPanel">
                             <InputPanel
                                 alpha={ this.state.alpha }
                                 beta={ this.state.beta }
@@ -115,38 +116,34 @@ class CoinFlippingSim extends Component {
                                 isFlipping={ this.state.isFlipping }
                                 reset={ this.handleResetButton }
                             />
-                        </Row>
+                        </div>
                         
-                        <Row className="CoinFlippingSim-ButtonPanel">
-                            <ButtonToolbar className="CoinFlippingSim-ButtonPanel">
-                                <Button
-                                    onClick={ this.handleFlipButton }
-                                    size="lg"
-                                    variant="primary">
-                                    Flip!
-                                </Button>{' '}
+                        <div className="panel" id="CoinFlippingSim-ButtonPanel">  
+                            <button
+                                onClick={ this.handleFlipButton }
+                                id="flip-button">
+                                Flip!
+                            </button>
 
-                                <Button
-                                    onClick={ this.handleResetButton }
-                                    size="lg"
-                                    variant="danger">
-                                    Reset
-                                </Button>{' '}
-                            </ButtonToolbar>
-                        </Row>
-                    </Col>
-                </Row>
+                            <button
+                                onClick={ this.handleResetButton }
+                                id="reset-button">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-                <Row>
-                    <Col className="CoinFlippingSim-PlottingPanel">
+                <div className="row" id="lower-row">
+                    <div className="panel" id="CoinFlippingSim-PlottingPanel">
                         <PlottingPanel alpha={ this.state.alpha } beta={ this.state.beta } />
-                    </Col>
+                    </div>
 
-                    <Col className="CoinFlippingSim-TablePanel">
+                    <div className="panel" id="CoinFlippingSim-TablePanel">
                         <TablePanel data={ this.state.table }/>
-                    </Col>
-                </Row>
-            </Container>
+                    </div>
+                </div>
+            </div>
         );
     }
 }

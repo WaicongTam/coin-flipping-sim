@@ -1,3 +1,46 @@
-div {
-    display: inline-block;
+.CoinFlippingSim {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction:column;
+    height: 80%;
+    width: 80%;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 50%;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.panel {
+    box-sizing: border-box;
+    padding: 1em
+}
+
+#CoinFlippingSim-ControlPanel {
+    width: 50%;
+}
+
+#CoinFlippingSim-PlottingPanel {
+    width: 50%;
+}
+
+#CoinFlippingSim-TablePanel {
+    width: 50%;
+}
+
+#CoinFlippingSim-CoinPanel {
+    width: 50%;
 }
