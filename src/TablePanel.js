@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Table, } from 'react-bootstrap';
 import './TablePanel.css';
 
 class TablePanel extends Component {
 
     render() {
         return (
-            <Table striped bordered hover size="sm">
+            <table>
                 <thead>
                     <tr>
                         <th className="number">#</th>
@@ -17,7 +16,7 @@ class TablePanel extends Component {
                 </thead>
 
                 <tbody>   
-                    { this.props.data.map(r => <tr className="record">
+                    { this.props.data.map(r => <tr className="record" key={ r.number }>
                         <td className="number">
                             { r.number }
                         </td>
@@ -25,14 +24,14 @@ class TablePanel extends Component {
                             { r.result }
                         </td>
                         <td className="sequence">
-                            { r.sequence.length > 0 ? `[${r.sequence.join(', ')}]` : '-' }
+                            { `[${r.sequence.join(', ')}]` }
                         </td>
                         <td className="knowledge">
-                            { r.knowledge }
+                            { r.knowledge.toFixed(6) }
                         </td>
                     </tr>) }
                 </tbody>
-            </Table>
+            </table>
         );
     }
 }
